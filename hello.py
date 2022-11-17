@@ -128,7 +128,6 @@
 
 x = input('Enter: ')
 
-
 if True != x.isdigit():
   print('lol')
 elif len(x) != 6:
@@ -144,8 +143,12 @@ sum3 = First % 10
 sum2 = int(First / 10) % 10
 sum1 = int(First / 100)
 
-sumFirst = sum1 + sum2 + sum3
+sum3_s = Second % 10
+sum2_s = int(Second/ 10) % 10
+sum1_s = int(Second / 100)
 
-print(sumFirst)
+sumFirst = sum1 + sum2 + sum3
+sumSecond = sum1_s + sum2_s + sum3_s
+print(sumFirst, sumSecond)
 
 
